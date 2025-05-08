@@ -4,5 +4,9 @@
   },
   "dependencies": {
     "tailwindcss-animated": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "build": "NODE_ENV=production tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify"
   }
 }
